@@ -1,0 +1,23 @@
+#navigator{
+    border: 3px solid red;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+img{
+    margin-right: auto;
+}
+
+
+nav{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+
+a{
+    border: 1px solid;
+}
