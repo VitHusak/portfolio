@@ -1,13 +1,48 @@
-#navigator{
-    border: 3px solid red;
+html{
+    font-family: 'Alegreya Sans', sans-serif;
+    box-sizing: border-box;
 
-    display: flex;
-    justify-content: flex-end;
+   
+}
+
+*{
+    margin: 0;
 }
 
 
-img{
-    margin-right: auto;
+body{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #F2F2F2;
+}
+
+/* přesahující */
+
+
+/* sekce navigator ID=NAVIGATOR */
+#navigator{
+    /* border: 3px solid red; */
+    margin-top: 2em;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(242, 242, 242, 0.85);
+
+  
+}
+
+
+img.logo{
+    margin: 0px auto 0 5em;
+    width: 4em;
+    height: 4em;
+
+    border: 2px solid rgb(177, 177, 177);
+    border-radius: 50%;
+    box-shadow: 9px 6px 25px -1px rgba(133,131,133,0.5);
+    
 }
 
 
@@ -16,8 +51,58 @@ nav{
     display: flex;
     justify-content: space-around;
     width: 50vw;
+    margin-right: 10em;
+    /* důležitá barva!!!!!!!!!!!!!!!! */
+    background-color: #083F4C;          
+
+
 }
 
-a{
-    border: 1px solid;
+nav a{
+    display: flex;
+    /* border: 1px solid; */ 
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
 }
+
+nav a:hover{
+ background-color: #5CBE90;
+}
+
+nav p{
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    color: whitesmoke;
+    font-size: 1.3em;
+ }
+
+
+ /* SEKCE NADPIS H1 ID=HOME */
+
+ .home{
+     margin-top: 10em;
+     height: 50vh;
+     background-color: whitesmoke;
+
+    background-image: url(https://cdn.pixabay.com/photo/2015/03/26/09/47/sky-690293_960_720.jpg);
+    background-size: 100vw 50vh; 
+    position: relative;
+    z-index: -1;
+
+ }
+
+ h1{
+   
+     color: whitesmoke;
+     width: fit-content;
+
+     position: absolute;
+     top: 75%;
+     left: 50%;
+
+     font-size: 2em;
+ }
+
+ 
