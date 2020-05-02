@@ -17,14 +17,18 @@ body{
     background-color: #F2F2F2;
 }
 
+/* každá section obdélníček stránky je flex */
+section{
+    display: flex;
+}
+
 /* přesahující */
 
 
 /* sekce navigator ID=NAVIGATOR */
-#navigator{
+.navigator{
     /* border: 3px solid red; */
     margin-top: 2em;
-    display: flex;
     justify-content: flex-end;
     position: fixed;
     width: 100vw;
@@ -67,6 +71,7 @@ nav a{
 }
 
 nav a:hover{
+    /* důležitá barva!!!!!!!!!!!!!!!!! */
  background-color: #5CBE90;
 }
 
@@ -88,21 +93,439 @@ nav p{
 
     background-image: url(https://cdn.pixabay.com/photo/2015/03/26/09/47/sky-690293_960_720.jpg);
     background-size: 100vw 50vh; 
-    position: relative;
-    z-index: -1;
+ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
  }
 
  h1{
-   
+   /* background-color: yellow; */
      color: whitesmoke;
-     width: fit-content;
-
-     position: absolute;
-     top: 75%;
-     left: 50%;
-
+     height:fit-content;
      font-size: 2em;
+
+    margin-right: 6em;
+    margin-top: 4em;
+    margin-bottom: 1em;
  }
 
- 
+
+ /* zvýraznění jména */
+ h1 span{
+     color: #5CBE90;
+     font-weight: 900;
+     font-size: 1.2em;
+     border-bottom: 0.1em solid #5CBE90;
+     margin-left: 0.3em;
+ }
+
+ /* SEKCE TEXT POD NADPISEM */
+
+ .text{
+     height: 30vh;
+
+     justify-content: center;
+     align-items: center;
+     
+
+ }
+
+ .text p{
+     height: fit-content;
+     width: 70vw;
+     font-size: 1.5em;
+     text-align: center;
+ }
+
+
+
+ /* BLACK SECTION */
+
+ .blacksection{
+     /* same color for FIND ME HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+     background-color: rgb(4, 36, 43);
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    z-index: -1;
+
+    height: 35vh;
+ }
+
+ .blacksection > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid white; */
+    height: 25vh;
+    width: 15vw;
+}
+
+ .whitecircle{
+     width: 20vh;
+     height: 20vh;
+     background-color: #F2F2F2;
+     border-radius: 50%;
+     
+     position: absolute;
+
+     top: -13vh;
+     /* margin-bottom: 1em; */
+
+     z-index: -1;
+     
+ }
+
+
+ .blacksection h4{
+     width: fit-content;
+     color: #5CBE90;
+     font-size: 1.7em;
+
+     padding-bottom: 1em;
+
+ }
+
+ .blacksection p{
+    width: 80%;
+    color: whitesmoke;
+    text-align: center;
+
+    padding-bottom: 1em;
+ }
+
+ /* SECTION MY SKILLS */
+
+ .skills{
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+
+     /* height: 70vh; */
+ }
+
+/* h2 bude všude stejná */
+
+h2{
+color: #5CBE90;
+width: fit-content;
+font-size: 3.5em;
+margin-top: 9rem;
+margin-bottom: 0.7em;
+}
+
+
+
+.skills > div{
+    /* border: 2px solid red; */
+    display: flex;
+
+    width: 70vw;
+    min-height: 5vh;
+
+    margin: 1vh 0;
+}
+
+
+
+.skills > div div:nth-child(1){
+    background-color: rgb(4, 36, 43);
+    color: whitesmoke;
+    font-size: 1.5em;
+    text-align: center;
+
+    
+    width: 10vw;
+}
+
+.skills > div div:nth-child(1) p{
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+
+
+.htmlbox div:nth-child(2){
+    width:48vw;
+    background-color: #5CBE90;
+
+}
+
+.htmlbox div:nth-child(3){
+    width:12vw;
+    background-color: rgb(190, 190, 190);
+}
+
+.percentage{
+    font-size: 1.5em;
+    color: rgb(4, 36, 43);
+
+    width: fit-content;
+    height: fit-content;
+
+    margin-right: 1vw;
+}
+
+.skills > div div:nth-child(3){
+ display: flex;
+ justify-content: flex-end;
+}
+/* ------------------------------------------------------- */
+/* procenta: na zelenou a sedou cast zbývá 60vw takže pro 80% zelené časti 60*0.8=48vw atd... */
+
+.htmlbox div:nth-child(2){
+    width:48vw;
+    background-color: #5CBE90;
+
+}
+
+.htmlbox div:nth-child(3){
+    width:12vw;
+    background-color: rgb(190, 190, 190);
+}
+
+
+.cssbox div:nth-child(2){
+    width:48vw;
+    background-color: #5CBE90;
+
+}
+
+.cssbox div:nth-child(3){
+    width:12vw;
+    background-color: rgb(190, 190, 190);
+}
+
+
+.jsbox div:nth-child(2){
+    width:36vw;
+    background-color: #5CBE90;
+
+}
+
+.jsbox div:nth-child(3){
+    width:24vw;
+    background-color: rgb(190, 190, 190);
+}
+
+
+.reactbox div:nth-child(2){
+    width:33vw;
+    background-color: #5CBE90;
+
+}
+
+.reactbox div:nth-child(3){
+    width:27vw;
+    background-color: rgb(190, 190, 190);
+}
+
+
+
+.jquerybox div:nth-child(2){
+    width:31.8vw;
+    background-color: #5CBE90;
+
+}
+
+.jquerybox div:nth-child(3){
+    width:28.2vw;
+    background-color: rgb(190, 190, 190);
+}
+
+
+.phpbox div:nth-child(2){
+    width:18vw;
+    background-color: #5CBE90;
+
+}
+
+.phpbox div:nth-child(3){
+    width:42vw;
+    background-color: rgb(190, 190, 190);
+}
+
+
+.laravelbox div:nth-child(2){
+    width:12vw;
+    background-color: #5CBE90;
+
+}
+
+.laravelbox div:nth-child(3){
+    width:48vw;
+    background-color: rgb(190, 190, 190);
+}
+
+
+.uxbox div:nth-child(2){
+    width:12vw;
+    background-color: #5CBE90;
+
+}
+
+.uxbox div:nth-child(3){
+    width:48vw;
+    background-color: rgb(190, 190, 190);
+}
+
+/* ------------------------------------------------------------------ */
+
+/* SECTION PORTFOLIO */
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    /* margin-top: 9rem; */
+    background-color: #5CBE90;
+
+    /* border: 2px solid yellow; */
+}
+
+.whitebackground{
+    width: 100vw;
+    height: 12rem;
+
+    background-color: #F2F2F2;
+}
+
+.portfolio h2{
+    /* background-color: #5CBE90 ; */
+    color: whitesmoke;
+
+    margin: 4rem;
+    
+}
+
+
+.portdiv{
+    /* border: 3px solid black; */
+
+    display: flex;
+
+    justify-content: space-around;
+
+
+    flex-wrap: wrap;
+    align-content: space-around;
+
+    height: 100vh;
+    
+}
+
+.portdiv>div{
+
+    /* border: 3px solid red; */
+
+    width: 25vw;
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #F2F2F2 ;
+
+    font-size: 1.5em;
+}
+
+
+
+.portfolio p{
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.portfolio img{
+    width: 25vw;
+    height: 50%;
+}
+
+
+
+/* SECTION ABOUT ME */
+
+.about{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}
+
+.about>div{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: fit-content;
+
+    /* border: 2px solid red; */
+}
+
+
+.about img{
+    width: 20vw;
+    height: 20vw;
+
+    border-radius: 50%;
+
+    border: 0.3rem solid rgb(4, 36, 43);
+
+    box-shadow: 9px 6px 25px -1px rgba(133,131,133,0.5);
+
+    margin-bottom: 3vh;
+
+}
+
+
+
+.about>div>div{
+    /* border: 2px solid green; */
+
+    width: 45vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divtext p{
+    font-size: 1.3em;
+
+    width: 30vw;
+
+    margin: 1em;
+}
+
+.bold{
+    font-weight: bolder;
+    margin-bottom: 5vh;
+}
+
+
+
+.about button{
+    font-size: 1.5em;
+    background-color: rgb(4, 36, 43);
+    color: whitesmoke;
+
+    /* border-radius: 10%; */
+
+    width: 20vw;
+    height: 7vh;
+}
+
+.about button:hover{
+    background-color: #5CBE90;
+
+}
+
