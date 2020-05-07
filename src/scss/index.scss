@@ -1,0 +1,36 @@
+@import 'variable.scss';
+@import 'navigator.scss';
+@import 'home.scss';
+@import 'text.scss';
+@import 'blacksection.scss';
+@import 'skills.scss';
+@import 'portfolio.scss';
+
+
+html{
+    font-family: 'Alegreya Sans', sans-serif;
+    box-sizing: border-box;   
+    font-size: 24px;
+}
+
+*{
+    margin: 0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: $color1;
+}
+
+
+/* každá section obdélníček stránky je flex */
+section{
+    display: flex;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}

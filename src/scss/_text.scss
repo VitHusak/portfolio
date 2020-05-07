@@ -1,0 +1,15 @@
+
+.text {
+
+
+    height: 30vh;
+
+    justify-content: center;
+    align-items: center;
+    
+    &__paragraph {
+        height: fit-content;
+        width: 70vw;
+        text-align: center;
+    }
+}

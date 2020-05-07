@@ -1,0 +1,131 @@
+.skills {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+    &__h2 {
+        color: $color3;
+        width: fit-content;
+        font-size: $h2height;
+        margin-top: 18vh;
+        margin-bottom: 5vh;
+        // background-color: red;
+    }
+
+    &__box {
+        display: flex;
+
+        width: 70vw;
+        min-height: 5vh;    
+        margin: 1vh 0;
+
+        &__d1 {
+            background-color: $color2;
+            color: $color1;
+            font-size: 1.3em;
+            text-align: center;            
+            width: 10vw;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        /* procenta: na zelenou a sedou cast zbývá 60vw takže pro 80% zelené časti 60*0.8=48vw atd... */
+        
+        &__html {
+            width:48vw;
+            background-color: $color3;
+        }
+
+        &__css {
+            width:48vw;
+            background-color: $color3;
+        }
+
+        &__javascript {
+            width:36vw;
+            background-color: $color3;
+        }
+
+        &__react {
+            width:33vw;
+            background-color: $color3;
+        }
+
+        &__jquery {
+            width:31.8vw;
+            background-color: $color3;
+        }
+
+        &__php {
+            width:18vw;
+            background-color: $color3;
+        }
+
+        &__laravel {
+            width:12vw;
+            background-color: $color3;
+        }
+
+        &__ux {
+            width:12vw;
+            background-color: $color3;
+        }
+
+
+
+        &__percentage {
+            background-color: rgb(190, 190, 190);
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            color: $color2;
+
+            padding-right: 2vw;
+
+            
+            
+            &--html {
+                width:12vw;
+            }
+
+            &--css {
+                width:12vw;
+            }
+
+            &--javascript {
+                width:24vw;
+            }
+
+            &--react {
+                width:27vw;
+            }
+
+            &--jquery {
+                width:28.2vw;
+            }
+
+            &--php {
+                width:42vw;
+            }
+
+            &--laravel {
+                width:48vw;
+            }
+
+            &--ux {
+                width:48vw;
+            }
+
+
+        }
+    }
+
+
+}
