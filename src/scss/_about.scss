@@ -1,0 +1,55 @@
+
+
+.about {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__h2 {
+        color: $color3;
+        width: fit-content;
+        font-size: $h2height;
+        margin-top: 18vh;
+        margin-bottom: 5vh;
+    }
+
+    &__div {
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        height: fit-content;
+    }
+
+    &__img {
+        width: 20vw;
+        height: 20vw;    
+        border-radius: 50%;    
+        border: 0.2rem solid $color2;    
+        box-shadow: 9px 6px 25px -1px rgba(133,131,133,0.5);
+    
+        margin-bottom: 3vh;
+    }
+
+    &__item {
+        width: 45vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        &--text {
+            height: 70vh;
+        }
+    }
+
+    &__p {
+        font-size: 1.3em;
+
+        width: vw;
+    
+        // margin: 1em;
+    }
+   
+}
